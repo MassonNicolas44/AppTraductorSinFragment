@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtnumbers"
+        style="@style/Texto"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/numbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtfamily"
+        style="@style/Texto"
+        android:background="#4CAF50"
+        android:text="@string/family_members"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumbers" />
+
+    <TextView
+        android:id="@+id/txtcolors"
+        style="@style/Texto"
+        android:background="#673AB7"
+        android:text="@string/colors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtfamily" />
+
+    <TextView
+        android:id="@+id/txtphrases"
+        style="@style/Texto"
+        android:background="#009688"
+        android:text="@string/phrases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcolors" />
+</androidx.constraintlayout.widget.ConstraintLayout>
